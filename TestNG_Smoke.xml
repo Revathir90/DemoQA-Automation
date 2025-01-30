@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="DemoQA Application Automation">
+	<listeners>
+		<listener class-name="com.demoqa.util.WebEventListener"/>
+		<listener class-name="com.demoqa.extentReportListener.ExtentReportListener"/>
+	</listeners>
+	<test name="Smoke Test Cases">
+		<classes>
+			<class name="com.demoqa.testcases.JoinNowPageTest" />
+			<class name="com.demoqa.testcases.HomePageTest" >
+			<methods>
+				<include name="verifyHomePageTitleTest"/>	
+				<include name="verifyHomePageLogoTest"/>
+			</methods>
+			</class>
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

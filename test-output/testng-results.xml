@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-01-28T11:52:09 MST" name="Default suite" finished-at="2025-01-28T11:53:19 MST" duration-ms="69480">
+    <groups>
+    </groups>
+    <test started-at="2025-01-28T11:52:09 MST" name="Default test" finished-at="2025-01-28T11:53:19 MST" duration-ms="69480">
+      <class name="com.demoqa.testcases.JoinNowPageTest">
+        <test-method is-config="true" signature="listnerSetup()[pri:0, instance:com.demoqa.testcases.JoinNowPageTest@73e9cf30]" started-at="2025-01-28T11:52:09 MST" name="listnerSetup" finished-at="2025-01-28T11:52:09 MST" duration-ms="357" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- listnerSetup -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.demoqa.testcases.JoinNowPageTest@73e9cf30]" started-at="2025-01-28T11:52:09 MST" name="setUp" finished-at="2025-01-28T11:53:03 MST" duration-ms="53858" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyJoinNowPageLogoTest()[pri:2, instance:com.demoqa.testcases.JoinNowPageTest@73e9cf30]" started-at="2025-01-28T11:53:03 MST" name="verifyJoinNowPageLogoTest" finished-at="2025-01-28T11:53:18 MST" duration-ms="15315" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyJoinNowPageLogoTest -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.demoqa.testcases.JoinNowPageTest@73e9cf30]" started-at="2025-01-28T11:53:18 MST" name="cleanUp" finished-at="2025-01-28T11:53:19 MST" duration-ms="265" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method is-config="true" signature="listenerShutDown()[pri:0, instance:com.demoqa.testcases.JoinNowPageTest@73e9cf30]" started-at="2025-01-28T11:53:19 MST" name="listenerShutDown" finished-at="2025-01-28T11:53:19 MST" duration-ms="382" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- listenerShutDown -->
+      </class> <!-- com.demoqa.testcases.JoinNowPageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
