@@ -2,7 +2,9 @@ package com.demoqa.testcases;
 
 import java.io.IOException;
 
+import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 
 import com.demoqa.base.TestBase;
 import com.demoqa.pages.ElementsPage;
@@ -30,6 +32,16 @@ public class CheckBoxTest extends TestBase{
 		elementpage.clickOnCheckBox();
 	}
 	
+	@Test
+	public void validateCheckBoxPageTest() {
+		Assert.assertTrue(checkbox.validateCheckBoxPage(), "CheckBox page  not loaded");
+		
+	}
+	
+	@Test
+	public void validateHomeCheckboxTest() {
+		checkbox.selectingHomeCheckbox();
+	}
 
 
 }
