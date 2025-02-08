@@ -65,8 +65,6 @@ public class TestBase {
 		driver = new EventFiringDecorator<WebDriver>(eventListener).decorate(driver);
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
-		// driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGELOAD_TIMEOUT,
-		// TimeUnit.SECONDS);
 		driver.get(prop.getProperty("url"));
 
 	}
