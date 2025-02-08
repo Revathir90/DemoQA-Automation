@@ -3,13 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.demoqa.testcases.TextBoxTest">
+      <class name="com.demoqa.testcases.CheckBoxTest">
         <methods>
-          <include name="validatingOutputTextField"/>
+          <include name="listnerSetup"/>
+          <include name="listenerShutDown"/>
           <include name="setup"/>
+          <include name="validateHomeCheckboxTest"/>
           <include name="cleanUp"/>
         </methods>
-      </class> <!-- com.demoqa.testcases.TextBoxTest -->
+      </class> <!-- com.demoqa.testcases.CheckBoxTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

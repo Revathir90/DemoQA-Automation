@@ -1,9 +1,13 @@
 package com.demoqa.pages.elements;
 
+import java.time.Duration;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.Assert;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.demoqa.base.TestBase;
 
@@ -19,9 +23,13 @@ public class CheckBox extends TestBase{
 	@FindBy (xpath="//button[@title='Collapse all']")
 	WebElement collapseall;
 	
-	@FindBy (id="tree-node-home") //xpath="//input[@id='tree-node-home']"
+	@FindBy (xpath="//*[@id=\"tree-node\"]/ol/li/span/label") //xpath="//input[@id='tree-node-home']" 
 	WebElement homecheckbox;
 	
+	@FindBy (id="result")
+	WebElement result;
+	
+	//*[text()='Desktop']
 	
 	// Initializing the page objects
 	public CheckBox() {
@@ -34,7 +42,11 @@ public class CheckBox extends TestBase{
 	}
 	
 	public void selectingHomeCheckbox() {
-		homecheckbox.click();
+		homecheckbox.click();	
+	}
+	
+	public boolean resultContent() {
+		return result.isDisplayed();
 	}
 		
 		

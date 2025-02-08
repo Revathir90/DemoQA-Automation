@@ -39,7 +39,7 @@ public class TestBase {
 		try {
 			prop = new Properties();
 			FileInputStream ip = new FileInputStream("/Users/revubharu/eclipse-workspace/"
-					+ "FrameworkCreation/src/test/resources/application.properties");
+					+ "DemoQAAutomation/src/test/resources/application.properties");
 			prop.load(ip);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
