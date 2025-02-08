@@ -27,8 +27,6 @@ public class TestUtil extends TestBase{
 	static Sheet sheet;
 	static JavascriptExecutor js;
 	
-	
-	//---------- Switch to Frame methods - method overloading ----------//
 	public static void switchtoFrame(int frameindex) {
 		driver.switchTo().frame(0);
 	}
@@ -39,8 +37,6 @@ public class TestUtil extends TestBase{
 		driver.switchTo().frame(frameelement);
 	}
 	
-	
-	//---------- Window scrolling ----------//
 	public static void windowScroll(WebElement element) {
 		js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].scrollIntoView();", element);
@@ -52,19 +48,14 @@ public class TestUtil extends TestBase{
 	}
 	*/
 	
-	
-	//----------  Taking screenshot ----------//
 	public static void takeScreenshot() throws IOException {
-		
 		File srcfile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		String currentDir = System.getProperty("user.dir");
 		File DestFile=new File(currentDir + "/screenshots/" +System.currentTimeMillis()+ ".png");
 		FileUtils.copyFile(srcfile, DestFile);
 		
 	}
-
 	
-	//---------- Getting Data from Excel - Data Driven Approach ----------//
 	public static Object[][] getTestData(String sheetName) throws IOException{
 		FileInputStream file = null;
 		try {
