@@ -20,7 +20,7 @@ public class TestUtil extends TestBase{
 	public static long PAGELOAD_TIMEOUT = 20;
 	public static long IMPLICIT_WAIT= 20;
 	
-	public static String TESTDATA_SHEET_PATH ="/Users/revubharu/eclipse-workspace/FrameworkCreation"
+	public static String TESTDATA_SHEET_PATH ="/Users/revubharu/eclipse-workspace/DemoQAAutomation"
 						+"/src/test/resources/TestData/DemoQATestData.xlsx";
 	
 	static Workbook workbook;

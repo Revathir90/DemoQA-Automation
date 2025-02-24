@@ -31,6 +31,7 @@ public class JoinNowPage extends TestBase{
 	
 	public String windowsHandles() {
 		String parent_window = driver.getWindowHandle();
+		System.out.println("Current Window = "+driver.getTitle());
 		Set<String> windowhandles = driver.getWindowHandles();
 		Iterator<String> I1= windowhandles.iterator();
 		while(I1.hasNext()){
