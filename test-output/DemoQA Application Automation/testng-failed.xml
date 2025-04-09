@@ -5,18 +5,24 @@
     <listener class-name="com.demoqa.util.WebEventListener"/>
     <listener class-name="com.demoqa.extentReportListener.ExtentReportListener"/>
   </listeners>
-  <test thread-count="5" name="Smoke Test Cases(failed)">
+  <test thread-count="5" name="Regression Test Cases(failed)">
     <classes>
-      <class name="com.demoqa.testcases.JoinNowPageTest">
+      <class name="com.demoqa.testcases.ElementsPageTest">
         <methods>
           <include name="listnerSetup"/>
-          <include name="cleanUp"/>
+          <include name="verifyElementPageTest"/>
           <include name="listenerShutDown"/>
-          <include name="verifyJoinNowPageTitleTest"/>
-          <include name="verifyJoinNowPageLogoTest"/>
+          <include name="clickOnLinksTest"/>
+          <include name="clickOnTextBoxTest"/>
           <include name="setUp"/>
+          <include name="clickOnBrokenLinksAndImagesTest"/>
+          <include name="clickOnRadioButtonTest"/>
+          <include name="cleanUp"/>
+          <include name="clickOnUploadAndDownloadTest"/>
+          <include name="clickOnWebTablesTest"/>
+          <include name="clickOnDynamicPropertiesTest"/>
         </methods>
-      </class> <!-- com.demoqa.testcases.JoinNowPageTest -->
+      </class> <!-- com.demoqa.testcases.ElementsPageTest -->
     </classes>
-  </test> <!-- Smoke Test Cases(failed) -->
+  </test> <!-- Regression Test Cases(failed) -->
 </suite> <!-- Failed suite [DemoQA Application Automation] -->

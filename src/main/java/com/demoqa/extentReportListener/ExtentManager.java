@@ -11,7 +11,7 @@ public class ExtentManager extends TestBase{
   public static void setExtent() throws IOException {
     htmlReporter = new ExtentSparkReporter(
         System.getProperty("user.dir") + "/test-output/ExtentReport/"
-            + "TestExecutionReport"
+            + "Extend"
             + ".html");
     htmlReporter.loadXMLConfig(System.getProperty("user.dir")+ "/src/main/resources/"
         + "extent-config.xml");

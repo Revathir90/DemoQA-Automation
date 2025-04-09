@@ -49,6 +49,8 @@ public class CheckBoxTest extends TestBase{
 	public void cleanUp() {
 		driver.quit();
 	}
+	
+	
 
 
 }

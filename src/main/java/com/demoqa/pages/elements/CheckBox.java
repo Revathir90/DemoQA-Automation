@@ -1,13 +1,9 @@
 package com.demoqa.pages.elements;
 
-import java.time.Duration;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.demoqa.base.TestBase;
 
@@ -34,6 +30,7 @@ public class CheckBox extends TestBase{
 	// Initializing the page objects
 	public CheckBox() {
 		PageFactory.initElements(driver, this);
+		log.info("Navigated to CheckBox Page");
 	}
 	
 	// Page actions or validations

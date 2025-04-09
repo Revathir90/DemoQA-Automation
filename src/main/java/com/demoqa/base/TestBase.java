@@ -5,6 +5,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -27,11 +28,13 @@ public class TestBase {
 	public static ExtentSparkReporter htmlReporter;
 	public static ExtentReports extent;
 	public static ExtentTest test;
+	public static Logger log;
 
 	@BeforeSuite
 	public void listnerSetup() throws IOException {
 	    ExtentManager.setExtent();
 	    eventListener = new WebEventListener();
+	    log = Logger.getLogger(TestBase.class);
 	  }
 	
 	
@@ -55,6 +58,7 @@ public class TestBase {
 		if (browserName.equals("chrome")) {
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
+			log.info("Browser lanunched successfully");
 		} else if (browserName.equals("firefox")) {
 			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();

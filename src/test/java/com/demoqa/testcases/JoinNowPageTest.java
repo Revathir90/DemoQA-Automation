@@ -31,6 +31,7 @@ public class JoinNowPageTest extends TestBase {
 	@Test (priority=1)
 	public void verifyJoinNowPageTitleTest() {
 		String parentwindow=joinNowPage.windowsHandles();
+		System.out.println("Current window after the method run 'windowsHandles': "+driver.getTitle());
 		String acttitle = joinNowPage.validatePageTitle();
 		String exptitle = "Tools QA - Selenium Training";
 		Assert.assertEquals(acttitle, exptitle,"JoinNowPage Title not matched");

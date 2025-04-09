@@ -66,10 +66,10 @@ public class ExtentReportListener extends ExtentManager implements ITestListener
 
       ObjectMapper mapper = new ObjectMapper();
       mapper.enable(SerializationFeature.INDENT_OUTPUT);
-      String filePath = "test-output/ExtentReport/TestExecutionReport.json";
+      String filePath = "test-output/ExtentReport/Extend.json";
       mapper.writeValue(new File(filePath), testResult);
     } catch (IOException e) {
-      throw new RuntimeException("Error occurred while writing to TestExecutionReport.json file: ",
+      throw new RuntimeException("Error occurred while writing to Extend.json file: ",
           e);
     }
   }

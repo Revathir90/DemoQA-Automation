@@ -1,17 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [DemoQA Application Automation]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.demoqa.util.WebEventListener"/>
+    <listener class-name="com.demoqa.extentReportListener.ExtentReportListener"/>
+  </listeners>
+  <test thread-count="5" name="Regression Test Cases(failed)">
     <classes>
-      <class name="com.demoqa.testcases.JoinNowPageTest">
+      <class name="com.demoqa.testcases.ElementsPageTest">
         <methods>
           <include name="listnerSetup"/>
-          <include name="cleanUp"/>
+          <include name="verifyElementPageTest"/>
           <include name="listenerShutDown"/>
-          <include name="verifyJoinNowPageTitleTest"/>
+          <include name="clickOnLinksTest"/>
+          <include name="clickOnTextBoxTest"/>
           <include name="setUp"/>
+          <include name="clickOnBrokenLinksAndImagesTest"/>
+          <include name="clickOnRadioButtonTest"/>
+          <include name="cleanUp"/>
+          <include name="clickOnUploadAndDownloadTest"/>
+          <include name="clickOnWebTablesTest"/>
+          <include name="clickOnDynamicPropertiesTest"/>
         </methods>
-      </class> <!-- com.demoqa.testcases.JoinNowPageTest -->
+      </class> <!-- com.demoqa.testcases.ElementsPageTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Regression Test Cases(failed) -->
+</suite> <!-- Failed suite [DemoQA Application Automation] -->
